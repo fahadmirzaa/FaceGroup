@@ -1,0 +1,35 @@
+<mat-card>
+	<mat-card-content>
+
+		<form [formGroup]="signupFormGroup">
+			<mat-form-field class="mat-form" appearance="fill">
+				<mat-label>Name</mat-label>
+				<input matInput placeholder="Name" formControlName="nameFormControl" />
+			</mat-form-field>
+			<mat-form-field class="mat-form" appearance="fill">
+				<mat-label>Username</mat-label>
+				<input matInput placeholder="Username" formControlName="usernameFormControl" />
+			</mat-form-field>
+			<mat-form-field class="mat-form" appearance="fill">
+				<mat-label>Email</mat-label>
+				<input matInput placeholder="Email" formControlName="emailFormControl" />
+			</mat-form-field>
+
+			<mat-form-field class="mat-form" appearance="fill">
+				<mat-label>Password</mat-label>
+				<input matInput type="password" placeholder="Password" formControlName="passwordFormControl" />
+			</mat-form-field>
+			<a routerLink="/auth/login" routerLinkActive="active" class="Already-account-anchor">Already have Account?</a>
+			<button mat-raised-button class="sign-up-btn" color="primary" (click)="onSignup()"
+				[disabled]="signupFormGroup.invalid">
+				SIGN UP
+			</button>
+			<p class="para">
+				For any assistance reach<span class="para-info">
+					mirzafahad123321@gmail.com</span>
+				or call
+				<span class="para-info"> (92)313-6611-570</span>
+			</p>
+		</form>
+	</mat-card-content>
+</mat-card>

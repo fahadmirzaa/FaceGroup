@@ -1,0 +1,22 @@
+/*noinspection ALL*/
+.main {
+	background-color: #f0f2f5;
+	display: flex;
+	height: 100vh;
+	align-items: center;
+	margin: 0 auto;
+	padding: 20px 0;
+	position: relative;
+	width: 980px;
+}
+.logo {
+	box-sizing: border-box;
+	margin-bottom: 115px;
+	margin-right: 0;
+	padding-right: 32px;
+	width: 580px;
+}
+.page {
+	display: flex;
+	background-color: #f0f2f5;
+}

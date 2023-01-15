@@ -1,0 +1,21 @@
+<mat-card>
+	<mat-card-content>
+		<form [formGroup]="signInFormGroup">
+			<mat-form-field class="mat-form" appearance="fill">
+				<mat-label>Email</mat-label>
+				<input matInput placeholder="Email" formControlName="emailFormControl" />
+			</mat-form-field>
+			<mat-form-field class="mat-form" appearance="fill">
+				<mat-label>Password</mat-label>
+				<input matInput type="password" placeholder="Password" formControlName="passwordFormControl" />
+			</mat-form-field>
+			<a routerLink="/auth/reset-password" class="forgot-Password-anchor">forgot Password?</a>
+			<button mat-raised-button class="login-btn" color="primary" [disabled]="signInFormGroup.invalid"
+				(click)="signIn()">
+				SIGN IN
+			</button>
+			<p class="footer">New on Facegroup?</p>
+			<a routerLink="/auth/sign-up" class="new-account">create new account</a>
+		</form>
+	</mat-card-content>
+</mat-card>
